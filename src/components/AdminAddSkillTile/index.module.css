@@ -1,0 +1,105 @@
+.container{
+    border-radius: 2px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    margin-right: 18px;
+    margin-bottom: 18px;
+    width: 260px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: NunitoSans-SemiBold;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #21262b;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-bottom: 1px solid #e1e2e3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.close{
+    font-size: 14px !important;
+    color: #999999;
+}
+.content{
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    padding: 12px;
+}
+.subSkillsList{
+    margin-bottom: 8px;
+}
+.videoContainer{
+    width: 236px;
+    height: 140px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.qualificationContainer{
+    width: 100%;
+}
+.addQualification{
+    border-radius: 2px;
+    background-color: hsl(204, 62%, 94%);
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+}
+.TextButtonContainerStyle{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding: 12px;
+}
+.TextButtonStyle{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+}
+.deleteContainer{
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #de4645;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoWrapper{
+    border-radius: 2px;
+    border: 1px solid #e1e2e3;
+    background-color: #798080;;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

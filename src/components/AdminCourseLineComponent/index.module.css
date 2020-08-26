@@ -1,0 +1,9 @@
+.deleteOutlinedContainer{
+    color: #de4645;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.InputStyle{
+    height: 36px;
+}

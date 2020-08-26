@@ -1,0 +1,118 @@
+.container{
+    border-top: 1px solid #e1e2e3;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    word-wrap: break-word;
+    white-space: initial;
+}
+.name{
+    width: 15.7%;
+    display: flex;
+}
+.nameTextStyle{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+    text-decoration: unset;
+    word-wrap: break-word;
+    white-space: initial;
+    text-align: left;
+    width: 80%;
+    top: -6px;
+    position: relative;
+}
+.nameButtonStyle{
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+
+.email{
+    width: 18.5%;
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.phone{
+    width: 11.5%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.skill{
+    width: 16.7%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.numberOfTeachers{
+    width: 10.5%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.date{
+    width: 10.2%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.empty{
+    width: 16.9%;
+    display: flex;
+    top: -6px;
+    justify-content: space-between;
+    position: relative;
+}
+.gap{
+    width: 20%;
+}
+.text{
+    width: 80%;
+}
+.buttonContainer{
+    width: 140px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #e5f1f9;
+}
+.manageTeachers{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+}

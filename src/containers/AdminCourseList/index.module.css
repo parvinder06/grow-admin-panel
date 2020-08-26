@@ -1,0 +1,138 @@
+.AddTeachersContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    align-items: center;
+}
+.TeachersText {
+    font-family: NunitoSans-Bold;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+}
+.AddTeacher{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #0883a7;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.ApplyFilter{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #fff;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #0883a7;
+    margin-right: 12px;
+}
+.teacherTable{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 18px;
+}
+.teacherTableHeader{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    word-wrap: break-word;
+    white-space: initial;
+}
+.name{
+    width: 29.5%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.skill{
+    width: 14.5%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.date{
+    width: 11.9%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.teacher{
+    width: 14.5%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.batches{
+    width: 11.7%;
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.empty{
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+    width: 17.9%;
+}
+.buttonContainer{
+    width: 140px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #e5f1f9;
+}
+.manageBatches{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+}

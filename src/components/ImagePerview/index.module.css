@@ -1,0 +1,15 @@
+.container{
+    text-align: center;
+    background-color: unset;
+}
+.image{
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    position: relative;
+    padding: 20px;
+    height: 340px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

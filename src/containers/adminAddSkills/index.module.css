@@ -1,0 +1,44 @@
+.container{
+    padding: 18px;
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+}
+.Skills{
+    font-family: NunitoSans-Bold;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+}
+.SkillsContainer{
+    border-bottom: 1px solid #e1e2e3;
+    margin-bottom: 18px;
+}
+.headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.SubSkillsContainer{
+    flex-wrap: wrap;
+    display: flex;
+}
+.OtherSkillButton{
+    border-radius: 2px;
+    background-color: #e5f1f9;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+}
+.deleteOutlined{
+    color: #de4645;
+    cursor: pointer;
+}

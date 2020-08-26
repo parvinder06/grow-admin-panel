@@ -1,0 +1,125 @@
+.container{
+    padding: 18px;
+    background-color: #fff;
+}
+.flexDisplay{
+    display: flex;
+}
+.flexEndDisplay{
+    display: flex;
+    align-items: flex-end;
+}
+.halfLeftSpace{
+    width: 50%;
+    margin-right: 9px;
+}
+.halfRightSpace{
+    width: 50%;
+    margin-left: 9px;
+}
+.InputContainerStyle{
+  margin-bottom: 12px;
+}
+.InputStyle{
+    height: 36px;
+}
+.separator{
+    border-bottom: 1px solid#f6f8fa;
+    margin-bottom: 18px;
+}
+.headingContainer{
+    font-family: NunitoSans-Bold;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 12px;
+}
+.profileContainer{
+    width: 60px;
+    height: 60px;
+    border: solid 1px #e1e2e3;
+    background-color: #f8f9f9;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+.personIcon{
+    font-size: 24px !important;
+    color: #999
+}
+.profileImageText{
+  font-family: NunitoSans-Regular;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #595c60;
+  margin-bottom: 8px;
+}
+.UploadImageText{
+  font-family: NunitoSans-SemiBold;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #268bd0;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.profileUploadButton{
+  border-radius: 2px;
+  background-color: #e5f1f9;
+  height: 36px;
+}
+.countrySelector{
+    height: 36px;
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #f8f9f9;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-right: 18px;
+    width: 20%;
+}
+.dropdown{
+    margin-bottom: 18px;
+}
+.inputHeading{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    margin-bottom: 4px;
+}
+.sameAs{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+    text-decoration: unset;
+    height: 20px;
+}
+.documentUploadButton{
+    width: 100%;
+}

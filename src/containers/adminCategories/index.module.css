@@ -1,0 +1,28 @@
+.AddCategoryContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    align-items: center;
+}
+.ProfessionalCategoryText {
+    font-family: NunitoSans-Bold;
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+}
+.AddSubCategory{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #0883a7;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+}

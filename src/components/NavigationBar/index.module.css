@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 18%;
+    background-color: yellow;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+.right{
+    width: 26%;
+    background-color:orange;
+    height: 60px;
+}
+.center{
+    width: 56%;
+    background-color:green;
+    padding-left: 24px;
+    height: 60px;
+}
+.menuIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    color: #fff;
+}
+.growText{
+  width: 78px;
+  height: 18px;
+  background-color: #ffffff;
+}
+.dropdownIconStyle{
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}

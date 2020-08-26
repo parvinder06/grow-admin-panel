@@ -1,0 +1,24 @@
+.textStyle{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-right: 12px;
+    max-width: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.iconStyle{
+    color: #999;
+    width: 20px !important;
+    height: 20px !important;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 36px;
+}

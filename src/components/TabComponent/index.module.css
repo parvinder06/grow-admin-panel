@@ -1,0 +1,32 @@
+.container{
+    font-family: NunitoSans-SemiBold;
+    font-size: 12px;
+    width: 568px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #595c60;
+    display: flex;
+}
+.tab{
+  border-bottom: 1px solid #f6f8fa;
+  cursor: pointer;
+  width: 283px;
+  padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    margin-right: 4px;
+}
+.icon{
+    width: 12px !important;
+    height: 14px !important;
+    color: #999999;
+}
+.active{
+    border-bottom: 1px solid #268bd0;
+}

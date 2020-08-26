@@ -1,0 +1,34 @@
+.container{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+    display: flex;
+    width: fit-content;
+}
+.pageBlock{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e1e2e3;
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+    cursor: pointer;
+}
+.activePageBlock{
+    background-color: #268bd0;
+    color: #fff;
+}
+.icon{
+    width: 14px !important;
+    height: 14px !important;
+}
+.disabled{
+    color: #c0c0c0;
+}

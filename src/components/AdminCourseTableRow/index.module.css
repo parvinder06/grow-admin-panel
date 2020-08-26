@@ -1,0 +1,107 @@
+.container{
+    border-top: 1px solid #e1e2e3;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    word-wrap: break-word;
+    white-space: initial;
+}
+.name{
+    width: 29.5%;
+    display: flex;
+    top: -6px;
+    position: relative;
+}
+.nameTextStyle{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+    text-decoration: unset;
+    word-wrap: break-word;
+    white-space: initial;
+    text-align: left;
+    width: 80%;
+}
+.nameButtonStyle{
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+
+.skill{
+    width: 14.5%;
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.date{
+    width: 11.9%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.teacher{
+    width: 14.5%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.batch{
+    width: 11.7%;
+    font-family:  NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #21262b;
+    display: flex;
+}
+.ratingContainer{
+    width: 17.9%;
+    top: -6px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.gap{
+    width: 20%;
+}
+.text{
+    width: 80%;
+}
+.buttonContainer{
+    width: 140px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #e5f1f9;
+}
+.manageBatches{
+    font-family: NunitoSans-SemiBold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+}

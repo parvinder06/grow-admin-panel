@@ -1,0 +1,274 @@
+.container{
+    margin: auto;
+    border-radius: 2px;
+}
+.profile{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+}
+.header{
+    border-radius: 2px;
+    background-color: #1c99c1;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+.content{
+    display: flex;
+    padding: 24px;
+}
+.content1{
+  margin-right: 12px;
+  width: 50%;
+}
+.content2{
+  margin-left: 12px;
+  width: 50%;
+}
+.profilePicture{
+    width: 80px;
+    height: 80px;
+    margin-right: 18px;
+}
+.nameContainer{
+   display: flex;
+   flex-direction: column;
+}
+.name{
+  font-family: NunitoSans-Bold;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+.email{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.phoneContainer{
+    display: flex;
+    margin-bottom: 26px;
+}
+.mobileNumber{
+    width: 50%;
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    display: flex;
+    align-items: center;
+}
+.whatsappNumber{
+    width: 50%;
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    display: flex;
+    align-items: center;
+}
+.introduction{
+    font-family: NunitoSans-SemiBold;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 4px;
+}
+.introStatement{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    margin-bottom: 24px;
+}
+.ratingWrapper{
+    display: flex;
+    margin-bottom: 24px;
+}
+.workType{
+  font-family: NunitoSans-SemiBold;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #21262b;
+  margin-bottom: 4px;
+}
+.workTypeContainer{
+    width: 50%;
+}
+.workTypeValue{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.ratingTypeContainer{
+    width: 50%;
+}
+.rating{
+  font-family: NunitoSans-SemiBold;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #21262b;
+  margin-bottom: 4px;
+}
+.ratingValue{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.linkedn{
+    font-family: NunitoSans-SemiBold;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 4px;
+}
+.linkedinValue{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+    margin-bottom: 24px;
+}
+.relation{
+    font-family: NunitoSans-SemiBold;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 4px;
+}
+.relationValue{
+    margin-bottom: 24px;
+    font-family: NunitoSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #595c60;
+}
+.addressContainer{
+    display: flex;
+}
+.permanentAddContainer{
+   width: 50%;
+}
+.currentAddContainer{
+    width: 50%;
+}
+.phoneIcon{
+    color: #999999;
+    font-size: 20px !important;
+    margin-right: 8px;
+}
+.whatsappIcon{
+    font-size: 14px !important;
+    color: #fff;
+}
+.whatsappIconContainer {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #25d366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+.starIcon{
+    color: #2c9a3b;
+    margin-right: 4px;
+    font-size: 12px !important;
+}
+.insertDriveIcon{
+    color: #268bd0;
+    margin-right: 8px;
+}
+.aadharContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.panCardContainer{
+    display: flex;
+    align-items: center;
+}
+.aadharStyle{
+    font-family: NunitoSans-Regular;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #268bd0;
+    text-decoration: unset;
+}
+.skills{
+    border-radius: 2px;
+    border: solid 1px #e1e2e3;
+    background-color: #ffffff;
+    padding: 24px;
+    padding-bottom: 0px;
+    margin-top: 18px;
+}
+.skillsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: NunitoSans-Bold;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #21262b;
+    margin-bottom: 18px;
+}
