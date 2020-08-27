@@ -3,7 +3,8 @@ import { Person } from '@material-ui/icons';
 import { Button, Input, Upload, message } from 'antd';
 import styles from './index.module.css';
 import '../../assets/fonts/fonts.css';
-import { TEMP_HEADER, BASE_URL } from '../../constants';
+import {  BASE_URL } from '../../constants';
+import AuthenticationService from '../../utils/AuthenticateService';
 import { emptyStringVerification, emailVerification, phoneNumberVerification } from '../../utils';
 
 import {
@@ -16,6 +17,7 @@ import {
 } from '../../components';
 
 const AdminAddInstitute = (props) => {
+    const jwt = `bearer ${AuthenticationService.getJwt()}`;
 
     const {
         name,
@@ -172,7 +174,7 @@ const AdminAddInstitute = (props) => {
                                             </div>
                                             <Upload 
                                                 onChange={onProfileUploadChange}
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 progress={() => {}}
                                                 showUploadList={false}
@@ -519,7 +521,7 @@ const AdminAddInstitute = (props) => {
                                     {
                                         registrationStatus !== 2 && (
                                             <Upload
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 onChange={onRegistrationUploadChange}
                                                 showUploadList={false}
@@ -559,7 +561,7 @@ const AdminAddInstitute = (props) => {
                                     {
                                         gstStatus !== 2 && (
                                             <Upload
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 onChange={onGSTUploadChange}
                                                 showUploadList={false}

@@ -16,7 +16,7 @@ import {
 import styles from './index.module.css';
 
 import useBackend from '../../hooks/useBackend';
-import { TEMP_HEADER, BASE_URL, FETCHING, SUCCESS, ERROR } from '../../constants';
+import {  BASE_URL, FETCHING, SUCCESS, ERROR } from '../../constants';
 
 const Container = () => {
     const history = useHistory();

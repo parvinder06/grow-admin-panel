@@ -13,7 +13,7 @@ import {
 import categoriesErrorModel from '../../modals/categoriesErrorModel';
 import useBackend from '../../hooks/useBackend';
 import { urlGenerator } from '../../utils';
-import { BASE_URL, FETCHING, ERROR, SUCCESS, TEMP_HEADER } from '../../constants';
+import { BASE_URL, FETCHING, ERROR, SUCCESS } from '../../constants';
 
 import TextButton from '../Textbutton';
 import styles from './index.module.css';

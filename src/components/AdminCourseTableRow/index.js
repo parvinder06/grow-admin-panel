@@ -5,7 +5,7 @@ import moment from 'moment';
 import { Button } from 'antd';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
-import { BASE_URL, FETCHING, ERROR, SUCCESS, TEMP_HEADER } from '../../constants';
+import { BASE_URL, FETCHING, ERROR, SUCCESS } from '../../constants';
 import { urlGenerator } from '../../utils';
 import useBackend from '../../hooks/useBackend';
 import getCoursesModel from '../../modals/getCoursesModel';

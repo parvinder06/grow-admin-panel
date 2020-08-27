@@ -5,7 +5,7 @@ import '../../assets/fonts/fonts.css';
 import { findIndex } from 'lodash';
 
 import useBackend from '../../hooks/useBackend';
-import { BASE_URL, FETCHING, ERROR, SUCCESS, TEMP_HEADER } from '../../constants';
+import { BASE_URL, FETCHING, ERROR, SUCCESS } from '../../constants';
 import { urlGenerator } from '../../utils';
 import { useLocation } from 'react-router-dom';
 import categoriesModel from '../../modals/categoriesCoursesModel';

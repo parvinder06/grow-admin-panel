@@ -54,7 +54,7 @@ const InputHeadingComponent = (props) => {
                     placeholder="Enter"
                     className={ redBoundary ? styles.redBoundary + ' ' + inputStyle : styles.Input + ' ' + inputStyle}
                     onBlur={onBlur}
-                    onChange={onchange} {...rest} 
+                    onChange={onchange} type={type} {...rest} 
                 />
             </div>    
         </div>

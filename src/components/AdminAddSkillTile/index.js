@@ -8,12 +8,13 @@ import TextButton from '../Textbutton';
 import TextButtonWithIcon from '../TextWithCancelButton';
 import AddImageThubnail from '../AddImageThumbnail';
 import VideoPlayer from '../VideoPlayer';
+import AuthenticationService from '../../utils/AuthenticateService';
 
 import {
     OverlayLoading,
 } from '../../components';
 
-import { FETCHING, SUCCESS, ERROR, TEMP_HEADER, BASE_URL } from '../../constants';
+import { FETCHING, SUCCESS, ERROR,  BASE_URL } from '../../constants';
 import { getVideoBinary } from '../../utils';
 import * as tus from 'tus-js-client';
 
@@ -25,6 +26,8 @@ const AdminAddSkillTile = (props) => {
         index,
         skill = {},
     } = props;
+
+    const jwt = `bearer ${AuthenticationService.getJwt()}`;
 
     // const [videoBinary, updateVideoBinary] = useState();
     const [videoSize, updateVideoSize] = useState();
@@ -254,7 +257,7 @@ const AdminAddSkillTile = (props) => {
                         {
                             (qaulificationUploadStatus !==2 && !qualificationDocWebLink) && (
                                 <Upload
-                                    headers={{ authorization: TEMP_HEADER }}
+                                    headers={{ authorization: jwt }}
                                     action={`${BASE_URL}/uploads`}
                                     showUploadList={false}
                                     onChange={onDocumentUpload}

@@ -3,7 +3,8 @@ import { Person } from '@material-ui/icons';
 import { Button, Input, Upload, message } from 'antd';
 import styles from './index.module.css';
 import '../../assets/fonts/fonts.css';
-import { TEMP_HEADER, BASE_URL } from '../../constants';
+import {  BASE_URL } from '../../constants';
+import AuthenticationService from '../../utils/AuthenticateService';
 import { emptyStringVerification, emailVerification, phoneNumberVerification, revenueSharingCheck } from '../../utils';
 
 import {
@@ -16,6 +17,7 @@ import {
 } from '../../components';
 
 const AdminAddTeacher = (props) => {
+    const jwt = `bearer ${AuthenticationService.getJwt()}`;
 
     const {
         name,
@@ -202,7 +204,7 @@ const AdminAddTeacher = (props) => {
                                             </div>
                                             <Upload 
                                                 onChange={onProfileUploadChange}
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 progress={() => {}}
                                                 showUploadList={false}
@@ -539,7 +541,7 @@ const AdminAddTeacher = (props) => {
                                     {
                                         (aadharFrontStatus !==2 && !aadharFrontFileName)  && (
                                             <Upload
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 onChange={onAadharUploadChange}
                                                 showUploadList={false}
@@ -566,7 +568,7 @@ const AdminAddTeacher = (props) => {
                                     {
                                         (aadharBackStatus !==2 && !aadharBackFileName) && (
                                             <Upload
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 showUploadList={false}
                                                 onChange={onAadharBackUploadChange}
@@ -598,7 +600,7 @@ const AdminAddTeacher = (props) => {
                                     {
                                         (panStatus !== 2 && !panFileName) && (
                                             <Upload
-                                                headers={{ authorization: TEMP_HEADER }}
+                                                headers={{ authorization: jwt }}
                                                 action={`${BASE_URL}/uploads`}
                                                 onChange={onPanUploadChange}
                                                 showUploadList={false}

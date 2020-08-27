@@ -4,12 +4,13 @@ import styles from './index.module.css';
 import '../../assets/fonts/fonts.css';
 
 import useBackend from '../../hooks/useBackend';
-import { BASE_URL, FETCHING, ERROR, SUCCESS, TEMP_HEADER } from '../../constants';
+import { BASE_URL, FETCHING, ERROR, SUCCESS } from '../../constants';
 import { urlGenerator } from '../../utils';
 import categoriesModel from '../../modals/categoriesCoursesModel';
 import categoriesErrorModel from '../../modals/categoriesErrorModel';
 import courseLevelModel from '../../modals/courseLevelModel';
 import getTeachersModel from '../../modals/getTeachersCourseModel';
+import AuthenticationService from '../../utils/AuthenticateService';
 
 import {
     InputHeadingComponent,
@@ -28,10 +29,7 @@ const typeArray = [
 ];
 
 const AdminAddTeacher = (props) => {
-
-    const {
-
-    } = props;
+    const jwt = `bearer ${AuthenticationService.getJwt()}`;
 
     const [name, updateName] = useState('');
     const [categoryId, updateCategoryId] = useState(-1);
@@ -132,7 +130,7 @@ const AdminAddTeacher = (props) => {
                 pageSize: Number.MAX_SAFE_INTEGER,
             }),
             {
-                headers: { Authorization: TEMP_HEADER },
+                headers: { Authorization: jwt },
             }
         );
     }

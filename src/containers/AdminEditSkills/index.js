@@ -6,7 +6,7 @@ import useBackend from '../../hooks/useBackend';
 import styles from './index.module.css';
 import categoriesModel from '../../modals/categoriesSkillsModel';
 import categoriesErrorModel from '../../modals/categoriesErrorModel';
-import { FETCHING, SUCCESS, BASE_URL, TEMP_HEADER } from '../../constants';
+import { FETCHING, SUCCESS, BASE_URL } from '../../constants';
 
 import { urlGenerator } from '../../utils';
 

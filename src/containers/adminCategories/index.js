@@ -9,7 +9,7 @@ import {
   ErrorComponent,
 } from '../../components';
 import useBackend from '../../hooks/useBackend';
-import { BASE_URL, FETCHING, ERROR, SUCCESS, TEMP_HEADER } from '../../constants';
+import { BASE_URL, FETCHING, ERROR, SUCCESS } from '../../constants';
 import { urlGenerator } from '../../utils';
 import categoriesModel from '../../modals/categoriesModel';
 import categoriesErrorModel from '../../modals/categoriesErrorModel';
