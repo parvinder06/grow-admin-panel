@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import { Phone, WhatsApp, Star, InsertDriveFile, People } from '@material-ui/icons';
 
 import '../../assets/fonts/fonts.css';
 import styles from './index.module.css';
-import { TextButton, AdminSkillTile } from '../../components';
+import { TextButton, AdminSkillTile, ImagePerview } from '../../components';
 
 const AdminTeacherProfile = (props) => {
 
@@ -26,6 +26,8 @@ const AdminTeacherProfile = (props) => {
                     referenceLink = '-',
                     companyType = '-',
                     rating = '-',
+                    registrationDoc = '',
+                    gstDoc = '',
                 },
                 address = {},
                 skills = [],
@@ -45,7 +47,28 @@ const AdminTeacherProfile = (props) => {
         });
     }
 
+    const onImageClose = () => {
+        updateImageState(false);
+        updateImageURL('');
+    }
+
+    const [imageState, updateImageState] = useState(false);
+    const [imageURL, updateImageURL] = useState(false);
+
+    const renderImagePerview = () => {
+        if (imageState) {
+            return (
+                <ImagePerview
+                    src={imageURL}
+                    onHide={onImageClose}
+                />
+            )
+        }
+        return null;
+    }
+
     return (
+        <div>
             <div className={styles.container}>
                 <div className={styles.profile}>
                     <div className={styles.header}>
@@ -87,11 +110,17 @@ const AdminTeacherProfile = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={styles.aadharContainer}>
+                                <div className={styles.aadharContainer} onClick={() => {
+                                    updateImageURL(registrationDoc);
+                                    updateImageState(true);
+                                }}>
                                     <InsertDriveFile className={styles.insertDriveIcon} />
                                     <TextButton text="View Registration Document" textStyle={styles.aadharStyle} />
                                 </div>
-                                <div className={styles.panCardContainer}>
+                                <div className={styles.panCardContainer} onClick={() => {
+                                    updateImageURL(gstDoc);
+                                    updateImageState(true);
+                                }}>
                                     <InsertDriveFile className={styles.insertDriveIcon} />
                                     <TextButton text="View GST Document" textStyle={styles.aadharStyle} />
                                 </div>
@@ -130,16 +159,16 @@ const AdminTeacherProfile = (props) => {
                                     </div>
                                 </div>
                                 <div className={styles.linkedn}>Bank Details</div>
-                                    {
-                                        bankDetails && (
-                                            <div className={styles.linkedinValue}>
-                                                <div>{bankDetails.accountName},</div>
-                                                <div>{bankDetails.bankName}, {`Acc - ${bankDetails.accountNumber}`}</div>
-                                                <div>{`IFSC - ${bankDetails.ifscCode}`}</div>
-                                            </div>
-                                        )
-                                    }
-                                </div>
+                                {
+                                    bankDetails && (
+                                        <div className={styles.linkedinValue}>
+                                            <div>{bankDetails.accountName},</div>
+                                            <div>{bankDetails.bankName}, {`Acc - ${bankDetails.accountNumber}`}</div>
+                                            <div>{`IFSC - ${bankDetails.ifscCode}`}</div>
+                                        </div>
+                                    )
+                                }
+                            </div>
                         </div>
                         <div className={styles.separator} />
                         <div className={styles.manageTeachers} onClick={navigateToInstitutesTeacher}>
@@ -163,6 +192,10 @@ const AdminTeacherProfile = (props) => {
                                                     index={`adminProfile-${index}-${subIndex}`}
                                                     demoVideoLink={demoVideoLink}
                                                     qualificationDocuments={qualificationDocuments}
+                                                    viewQualitificationDoc={() => {
+                                                        updateImageURL(qualificationDocuments);
+                                                        updateImageState(true);
+                                                    }}
                                                 />
                                             )
                                         })
@@ -173,6 +206,8 @@ const AdminTeacherProfile = (props) => {
                     </div>
                 </div>
             </div>
+            {renderImagePerview()}
+        </div>
     );
 }
 

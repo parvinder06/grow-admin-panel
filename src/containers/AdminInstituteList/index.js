@@ -38,7 +38,7 @@ const AdminInstituteList = (props) => {
     makeRequest(
       urlGenerator(BASE_URL, 'institutes', {
         page: pageNumber,
-        pageSize: 1,
+        pageSize: 10,
       })
     );
   }

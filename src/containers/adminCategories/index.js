@@ -79,7 +79,7 @@ const AdminCategories = (props) => {
       makeRequest(
         urlGenerator(BASE_URL, 'categories', {
           page: 1,
-          pageSize: 50, 
+          pageSize:  Number.MAX_SAFE_INTEGER, 
         })
       );
     }

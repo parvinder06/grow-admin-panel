@@ -77,7 +77,7 @@ const AdminCourseTableRow = (props) => {
     makeRequest(
       urlGenerator(BASE_URL, 'courses', {
         page: pageNumber,
-        pageSize: 1,
+        pageSize: 10,
       }),
     );
   }

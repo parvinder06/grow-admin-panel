@@ -36,7 +36,7 @@ const AdminTeacherList = (props) => {
     makeRequest(
       urlGenerator(BASE_URL, 'courses', {
         page: pageNumber,
-        pageSize: 1,
+        pageSize: 10,
       })
     );
     console.log('admin course list mounted');

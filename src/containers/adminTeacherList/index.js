@@ -59,7 +59,7 @@ const AdminTeacherList = (props) => {
 
     const queryParams =  {
       page: pageNumber,
-      pageSize: 1,
+      pageSize: 10,
       type: "individual",
     };
 

@@ -72,7 +72,7 @@ const AdminAddTeacher = (props) => {
         makeCategoriesRequest(
             urlGenerator(BASE_URL, 'categories', {
                 page: 1,
-                pageSize: 50,
+                pageSize:  Number.MAX_SAFE_INTEGER,
             })
         );
     }
